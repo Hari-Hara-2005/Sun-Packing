@@ -105,48 +105,52 @@
         </div>
 
         <!-- Mobile menu slide-in from the left -->
-         <div
-          id="mobile-menu"
-          class="menu-slide fixed top-0 left-0 z-50 bg-[#008AD2] w-3/4 h-[100vh] flex flex-col justify-between p-8"
+        <div
+        id="mobile-menu"
+        class="menu-slide fixed top-0 left-0 z-50 bg-[#008AD2] w-3/4  h-full overflow-y-hidden flex flex-col justify-between p-8"
+      >
+        <!-- Close Button -->
+        <button
+          id="close-menu"
+          class="text-white text-3xl absolute top-4 right-4"
         >
-          <!-- Close Button -->
-          <button
-            id="close-menu"
-            class="text-white text-3xl absolute top-4 right-4"
-          >
-            &times;
-          </button>
+          &times;
+        </button>
+      
+        <!-- Menu Items -->
+        <ul
+          class="flex flex-col items-start space-y-6 text-white text-lg font-semibold mt-12 "
+        >
 
           <!-- Menu Items -->
           <ul
             class="flex flex-col items-start space-y-6 text-white text-lg font-semibold"
           >
-              <li>
-              <a href="/index.html#about" class="hover:text-secondary-blue"
-                >About</a
-              >
-            </li>
-            <li>
-              <a href="/index.html#products" class="hover:text-secondary-blue"
-                >Products</a
-              >
-            </li>
-            <li>
-              <a
-                href="/index.html#infrastructure"
-                class="hover:text-secondary-blue"
-                >Infrastructure</a
-              >
-            </li>
-            <li>
-              <a href="/index.html#contact" class="hover:text-secondary-blue"
-                >Contact</a
-              >
-            </li>
+          <li>
+            <a href="/index.html#about" 
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="/index.html#products" 
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="/index.html#infrastructure"
+              >Infrastructure</a
+            >
+          </li>
+          <li>
+            <a href="/index.html#contact" 
+              >Contact</a
+            >
+          </li>
           </ul>
 
           <!-- TEL Number visible only in mobile menu -->
-          <div class="text-white text-lg font-semibold mt-4">
+          <div class="text-white text-lg font-semibold">
             TEL: 1-800-555-1234
           </div>
         </div>
