@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Sun Package - Trusted Packaging Partner. We provide high-quality packaging solutions for businesses across various industries. Since 1988, we’ve been crafting excellence in packaging services." />
+    <meta name="keywords" content="packaging solutions, trusted packaging partner, high-quality packaging, packaging services, Sun Package, packaging for businesses, custom packaging" />
+    <meta name="author" content="Sun Package" />
+    <title>Sun Package</title>
+     <link rel="icon" href="Assets/logo-2.png" type="image/png" />
+    <!-- Open Graph Meta Tags (For Social Media sharing) -->
+    <meta property="og:title" content="Sun Package - Trusted Packaging Partner" />
+    <meta property="og:description" content="We provide high-quality packaging solutions, trusted by businesses worldwide. Crafting excellence since 1988." />
+    <meta property="og:image" content="/Assets/Logo.png" />
+    <meta property="og:url" content="https://www.sunpackage.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:title" content="Sun Package - Trusted Packaging Partner" />
+    <meta name="twitter:description" content="We provide high-quality packaging solutions, trusted by businesses worldwide. Crafting excellence since 1988." />
+    <meta name="twitter:image" content="Assets/Logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-blue": "#003366",
+              "secondary-blue": "#0099cc",
+              "light-beige": "#f2e6d0",
+              gold: "#d4af37",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .text-shadow {
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .menu-slide {
+          transform: translateX(-100%);
+          transition: transform 0.3s ease-in-out;
+        }
+        .menu-slide.open {
+          transform: translateX(0);
+        }
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style>
+      .responsive-line-height {
+        line-height: 3rem;
+      }
+    
+      @media (min-width: 640px) {
+        .responsive-line-height {
+          line-height: 5rem;
+        }
+      }
+    
+      @media (min-width: 768px) {
+        .responsive-line-height {
+          line-height: 6rem;
+        }
+      }
+    </style>
+    
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header/Navbar -->
+    <section id="home" class="bg-[#00345D] min-h-[100vh]">
+      <nav class="bg-[#00345D] py-4 ">
+        <div
+          class="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between"
+        >
+          <a href="#home" class="flex items-center">
+            <img src="Assets/Logo.png" alt="Sun Package Logo" class="h-10" />
+          </a>
+          <!-- Desktop Menu -->
+          <ul class="hidden lg:flex space-x-8 text-white font-medium text-lg">
+            <li><a href="#about" class="hover:text-secondary-blue transition duration-300">About</a></li>
+            <li><a href="#products" class="hover:text-secondary-blue transition duration-300">Products</a></li>
+            <li>
+              <a href="#infrastructure" class="hover:text-secondary-blue transition duration-300">Infrastructure</a>
+            </li>
+            <li><a href="#contact" class="hover:text-secondary-blue transition duration-300">Contact</a></li>
+          </ul>
+          <div class="py-2 hidden lg:block text-[#fff] text-lg font-semibold">
+            TEL: 1-800-555-1234
+          </div>
+          <!-- Mobile menu button -->
+          <button
+            id="menu-toggle"
+            class="lg:hidden text-white focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu slide-in from the left -->
+        <div
+          id="mobile-menu"
+          class="menu-slide fixed top-0 left-0 z-50 bg-[#00345D] w-3/4 h-full flex flex-col justify-between p-8"
+        >
+          <!-- Close Button -->
+          <button
+            id="close-menu"
+            class="text-white text-3xl absolute top-4 right-4"
+          >
+            &times;
+          </button>
+
+          <!-- Menu Items -->
+          <ul
+            class="flex flex-col items-start space-y-6 text-white text-lg font-semibold"
+          >
+            <li><a href="#about" class="hover:text-secondary-blue transition duration-300 mobile-link">About</a></li>
+            <li><a href="#products" class="hover:text-secondary-blue transition duration-300 mobile-link">Products</a></li>
+            <li><a href="#infrastructure" class="hover:text-secondary-blue transition duration-300 mobile-link">Infrastructure</a></li>
+            <li><a href="#contact" class="hover:text-secondary-blue transition duration-300 mobile-link">Contact</a></li>
+          </ul>
+
+          <!-- TEL Number visible only in mobile menu -->
+          <div class="text-white text-lg font-semibold mt-4">
+            TEL: 1-800-555-1234
+          </div>
+        </div>
+
+        
+      </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-[#00345D] min-h-[80vh] flex items-center">
+      <div class="container mx-auto px-4 py-10">
+        <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-5">
+          
+          <!-- Left Content -->
+          <div class="w-full lg:w-1/2 text-white text-center lg:text-left">
+            <h1  
+           
+            class="responsive-line-height text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin">
+              <span class="text-gold font-semibold block responsive-line-height">Trusted Packaging Partner</span>
+              crafting excellence
+              <span class="text-secondary-blue font-semibold block responsive-line-height">since 1988</span>
+            </h1>
+          </div>
+    
+          <!-- Right Image -->
+          <div class="w-full lg:w-1/2 flex justify-center">
+            <img
+              src="Assets/box.png"
+              alt="Packaging Boxes"
+              class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg scale-150 w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="bg-[#008AD2] min-h-[85vh] text-white flex items-center py-16 md:py-0">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full lg:w-1/3 px-4 mb-10 lg:mb-0">
+            <div class="text-sm leading-relaxed">
+              <h2 class="text-4xl md:text-5xl font-bold mb-6 text-[#4AACDF]">About us</h2>
+              <p class="text-base md:text-lg">
+                Sun Package is a premier firm established in 1998, specializing
+                in the manufacture of high-quality corrugated sheets and boxes.
+                With over two decades of experience, we cater to a wide range of
+                industries, providing top-notch packaging solutions.
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:w-2/3 px-4 md:px-6">
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full md:w-1/2 px-4 mb-10">
+                <div class="text-3xl md:text-4xl font-bold mb-2 flex items-baseline">
+                  <h1 class="text-[#4AACDF]">01</h1>
+                  <h3 class="text-lg md:text-xl font-bold ml-3">Overview</h3>
+                </div>
+                <p class="text-base md:text-lg leading-relaxed">
+                  Sun Package has been a trusted name in the packaging industry
+                  since 1998. Our expertise lies in manufacturing corrugated
+                  sheets and boxes that cater to various industries.
+                </p>
+              </div>
+              <div class="w-full md:w-1/2 px-4 md:px-6 mb-10">
+                <div class="text-3xl md:text-4xl font-bold mb-2 flex items-baseline">
+                  <h1 class="text-[#4AACDF]">02</h1>
+                  <h3 class="text-lg font-bold ml-3">History and Experience</h3>
+                </div>
+                <p class="text-base md:text-lg leading-relaxed">
+                  With over 20 years of experience, we have built a reputation
+                  for quality and reliability. Our journey began with a vision
+                  to provide superior packaging solutions, and we have
+                  consistently delivered on that promise.
+                </p>
+              </div>
+              <div class="w-full md:w-1/2 px-4 md:px-6 mb-10 md:mb-0">
+                <div class="text-3xl md:text-4xl font-bold mb-2 flex items-baseline">
+                  <h1 class="text-[#4AACDF]">03</h1>
+                  <h3 class="text-lg font-bold ml-3">Mission and Vision</h3>
+                </div>
+                <p class="text-base md:text-lg leading-relaxed">
+                  Our mission is to deliver high-quality packaging solutions
+                  that meet the evolving needs of our customers. We envision
+                  becoming a global leader in the packaging industry by
+                  continuously innovating and improving our processes.
+                </p>
+              </div>
+              <div class="w-full md:w-1/2 px-4 md:px-6">
+                <div class="text-3xl md:text-4xl font-bold mb-2 flex items-baseline">
+                  <h1 class="text-[#4AACDF]">04</h1>
+                  <h3 class="text-lg font-bold ml-3">Team and Workforce</h3>
+                </div>
+                <p class="text-base md:text-lg leading-relaxed">
+                  Our team comprises over 60 skilled workers and a dedicated
+                  administrative staff. Together, we work towards achieving our
+                  goals and maintaining the highest standards of quality and
+                  safety.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="bg-white min-h-[90vh] items-center py-16 md:py-20 flex">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-[#01325D] mb-8">Products</h2>
+        <div class="text-primary-blue text-base md:text-lg leading-relaxed mb-12">
+          <p class="text-lg md:text-xl leading-7 md:leading-9">
+            We are having supporting hands of sixty workers and a team of
+            administrative staff to effectively produce 200 to 250 tons of
+            finished products in a month. The production is duly supported by
+            our in-house inspection department with adequate instruments to
+            consistently maintain quality. Inspection is done right from the
+            input receipt of raw material to the dispatch level. All the
+            finished products are delivered to the customers using proper
+            packaging.
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center md:justify-evenly py-8 md:py-16 gap-8 md:gap-0">
+          <!-- Item 1 -->
+          <div class="flex flex-col items-center text-center w-full sm:w-1/2 md:w-60 mb-8 md:mb-0">
+            <div
+              class="w-20 h-20 bg-[#01325D] rounded-full flex items-center justify-center border-4 border-white shadow-md mb-4"
+            >
+              <img
+                src="Assets/icon-4.png"
+                alt="Single Faced"
+                class="w-10 h-10"
+              />
+            </div>
+            <p class="text-[#01325D] text-lg font-medium">
+              Single Faced Corrugated Board (2 ply)
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex flex-col items-center text-center w-full sm:w-1/2 md:w-60 mb-8 md:mb-0">
+            <div
+              class="w-20 h-20 bg-[#01325D] rounded-full flex items-center justify-center border-4 border-white shadow-md mb-4"
+            >
+              <img
+                src="Assets/icon-3.png"
+                alt="Double Faced"
+                class="w-10 h-10"
+              />
+            </div>
+            <p class="text-[#01325D] text-lg font-medium">
+              Double Faced Corrugated Board (3 ply or single wall)
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center md:justify-evenly gap-8 md:gap-0">
+          <!-- Item 3 -->
+          <div class="flex flex-col items-center text-center w-full sm:w-1/2 md:w-60 mb-8 md:mb-0">
+            <div
+              class="w-20 h-20 bg-[#01325D] rounded-full flex items-center justify-center border-4 border-white shadow-md mb-4"
+            >
+              <img
+                src="Assets/icon-2.png"
+                alt="Double Wall"
+                class="w-10 h-10"
+              />
+            </div>
+            <p class="text-[#01325D] text-lg font-medium">
+              Double Wall Corrugated Board (5 ply or double wall)
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="flex flex-col items-center text-center w-full sm:w-1/2 md:w-60">
+            <div
+              class="w-20 h-20 bg-[#01325D] rounded-full flex items-center justify-center border-4 border-white shadow-md mb-4"
+            >
+              <img
+                src="Assets/icon-1.png"
+                alt="Double Faced 3ply"
+                class="w-10 h-10"
+              />
+            </div>
+            <p class="text-[#01325D] text-lg font-medium">
+              Double Faced Corrugated Board (3 ply or single wall)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infrastructure Section -->
+    <section id="infrastructure" class="py-16 bg-light-beige">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-primary-blue mb-10">
+          Infrastructure
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          <!-- Left side - large vertical image -->
+          <div class="md:col-span-1">
+            <img
+              src="Assets/img-5.jpg"
+              alt="Main Machine"
+              class="w-full h-full max-h-[730px] object-cover rounded-lg"
+            />
+          </div>
+
+          <!-- Right side - top and bottom grid -->
+          <div class="md:col-span-2 flex flex-col gap-6">
+            <!-- Top right image -->
+            <div>
+              <img
+                src="Assets/img-3.jpg"
+                alt="Top Right"
+                class="w-full h-64 md:h-96 object-cover rounded-lg"
+              />
+            </div>
+
+            <!-- Bottom right - 2 images side by side -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <img
+                src="Assets/img-2.jpg"
+                alt="Bottom Left"
+                class="w-full h-64 sm:h-80 object-cover rounded-lg"
+              />
+              <img
+                src="Assets/img-1.jpg"
+                alt="Bottom Right"
+                class="w-full h-64 sm:h-80 object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promise Section -->
+    <section id="promise"
+      class="py-10 bg-primary-blue text-white min-h-[70vh] flex items-center"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full lg:w-2/3 px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-secondary-blue mb-10">
+              Our Promise
+            </h2>
+            <div class="text-base md:text-lg leading-relaxed mb-8">
+              <p>
+                At our manufacturing facility, quality is at the heart of
+                everything we do. We are committed to delivering durable,
+                innovative, and sustainable packaging solutions that meet the
+                highest industry standards. Through rigorous quality control
+                procedures, hands-on management, and a focus on continuous
+                improvement, we ensure that each product meets our exacting
+                standards for material composition and operational efficiency.
+                Quality isn't just a policy—it's our promise.
+              </p>
+            </div>
+            <div class="space-y-6 md:space-y-8">
+              <a
+                href="/Quality_Policy.html"
+                class="block text-white hover:text-secondary-blue transition-colors text-lg"
+                >Quality policy</a
+              >
+              <a
+                href="/Safety_policy.html"
+                class="block text-white hover:text-secondary-blue transition-colors text-lg"
+                >Safety Policy</a
+              >
+              <a
+                href="/Technology_up-gradation.html"
+                class="block text-white hover:text-secondary-blue transition-colors text-lg"
+                >Technology upgradation</a
+              >
+            </div>
+          </div>
+          <div class="w-full lg:w-1/3 px-4 mt-8 lg:mt-0">
+            <div class="overflow-hidden rounded">
+              <img
+                src="Assets/img-6.jpg"
+                alt="Business Handshake"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-20 px-4 bg-white">
+      <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <div class="mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary-blue mb-4">Let's talk</h2>
+          <p class="text-base md:text-lg text-secondary-blue max-w-2xl">
+            Here, we're all ears and ready to connect with you. Whether you have
+            questions, ideas, or just want to say hello, we'd love to hear from
+            you. Reach out, and let's start a conversation—your voice matters to
+            us!
+          </p>
+        </div>
+
+        <!-- Form -->
+        <form class="grid md:grid-cols-2 gap-6">
+          <!-- Left Inputs -->
+          <div class="flex flex-col gap-5">
+            <!-- Name Field -->
+            <div
+              class="flex items-center gap-2 border-b border-[#01325D] pb-2 mb-4"
+            >
+              <svg
+                class="w-5 h-5 text-primary-blue"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 18.75v-1.5A3.75 3.75 0 0 0 12 13.5H6a3.75 3.75 0 0 0-3.75 3.75v1.5M12 10.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+              <input
+                type="text"
+                placeholder="Name"
+                class="w-full outline-none text-sm"
+              />
+            </div>
+
+            <!-- Email Field -->
+            <div
+              class="flex items-center gap-2 border-b border-[#01325D] pb-2 mb-4"
+            >
+              <svg
+                class="w-5 h-5 text-primary-blue"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25H4.5a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5H4.5a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.905l-7.5 4.5a2.25 2.25 0 0 1-2.36 0l-7.5-4.5a2.25 2.25 0 0 1-1.07-1.905V6.75"
+                />
+              </svg>
+              <input
+                type="email"
+                placeholder="Your email"
+                class="w-full outline-none text-sm"
+              />
+            </div>
+
+            <!-- Phone Field -->
+            <div
+              class="flex items-center gap-2 border-b border-[#01325D] pb-2 mb-4"
+            >
+              <svg
+                class="w-5 h-5 text-primary-blue"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 6.75A3 3 0 0 1 5.25 3h.3c.621 0 1.201.273 1.604.75l1.646 1.972a2.25 2.25 0 0 1 .372 2.224l-.825 2.477a.75.75 0 0 0 .172.758l2.905 2.905a.75.75 0 0 0 .758.172l2.477-.825a2.25 2.25 0 0 1 2.224.372l1.972 1.646c.477.403.75.983.75 1.604v.3a3 3 0 0 1-3 3A17.25 17.25 0 0 1 2.25 6.75Z"
+                />
+              </svg>
+              <input
+                type="tel"
+                placeholder="Your phone number"
+                class="w-full outline-none text-sm"
+              />
+            </div>
+          </div>
+
+          <!-- Right Textarea and Button -->
+          <div class="flex flex-col justify-between gap-5">
+            <textarea
+              placeholder="Tell us about your project."
+              rows="5"
+              class="outline-none resize-none text-sm border-b border-[#01325D]"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="self-start px-6 py-2 text-sm rounded-full border border-yellow-500 text-yellow-500 hover:bg-yellow-100 transition"
+            >
+              Send →
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-[#DECDA8] text-black px-4 py-10">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <!-- Contact Info -->
+          <div>
+            <img
+              src="Assets/logo-2.png"
+              alt="Sun Package Logo"
+              class="w-40 mb-8 lg:w-60 lg:mb-10"
+            />
+            <div class="flex items-center mt-2">
+              <span class="material-icons">home</span>
+              <p class="ml-2">4XX7 Middle Street. Thanjavur, India 39495.</p>
+            </div>
+            <div class="flex items-center mt-2">
+              <span class="material-icons">call</span>
+              <p class="ml-2">(406) 5XX-012X</p>
+            </div>
+            <div class="flex items-center mt-2">
+              <span class="material-icons">email</span>
+              <p class="ml-2">exampleX@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h2 class="text-lg font-semibold mb-4">Quick Links</h2>
+            <ul class="space-y-2">
+              <li><a href="#home" class="hover:text-[#00345D] transition duration-300">Home</a></li>
+              <li><a href="#about" class="hover:text-[#00345D] transition duration-300">About</a></li>
+              <li><a href="#products" class="hover:text-[#00345D] transition duration-300">Products</a></li>
+              <li>
+                <a href="#contact" class="hover:text-[#00345D] transition duration-300">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Useful Links -->
+          <div>
+            <h2 class="text-lg font-semibold mb-4">Useful Links</h2>
+            <ul class="space-y-2">
+              <li>
+                <a href="/Quality_Policy.html" target="_blank" class="hover:text-[#00345D] transition duration-300">
+                  Quality policy
+                </a>
+              </li>
+              <li>
+                <a href="/Safety_policy.html" target="_blank" class="hover:text-[#00345D] transition duration-300">
+                  Safety Policy
+                </a>
+              </li>
+              <li>
+                <a href="/Technology_up-gradation.html" target="_blank" class="hover:text-[#00345D] transition duration-300">
+                  Technology upgradation
+                </a>
+              </li>
+              <li>
+                <a href="/Performance.html" target="_blank" class="hover:text-[#00345D] transition duration-300">
+                  High performance
+                </a>
+              </li>
+              <li>
+                <a href="/Advance_Technology1.html" target="_blank" class="hover:text-[#00345D] transition duration-300">
+                  Advance  Technology
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h2 class="text-lg font-semibold mb-4">Newsletter Subscribe</h2>
+            <p>Subscribe for latest updates</p>
+            <div class="flex mt-3">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full p-2 rounded text-black mr-2"
+              />
+              <button
+                class="bg-[#fff] px-4 rounded text-black hover:bg-[#00345D] hover:text-white transition"
+              >
+                →
+              </button>
+            </div>
+            <div class="flex mt-4 space-x-4">
+              <a href="#" class="hover:text-[#00345D] transition duration-300"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="hover:text-[#00345D] transition duration-300"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="hover:text-[#00345D] transition duration-300"><i class="fab fa-pinterest"></i></a>
+              <a href="#" class="hover:text-[#00345D] transition duration-300"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10 text-sm">Copyright © 2024</div>
+    </footer>
+
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const overlay = document.getElementById("overlay");
+      const closeMenu = document.getElementById("close-menu");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+
+      // Toggle the mobile menu
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+        overlay.classList.toggle("hidden");
+      });
+
+      // Close the mobile menu when clicking the close button or overlay
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        overlay.classList.add("hidden");
+      });
+
+      overlay.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        overlay.classList.add("hidden");
+      });
+
+      // Close mobile menu when a link is clicked
+      mobileLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+          overlay.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

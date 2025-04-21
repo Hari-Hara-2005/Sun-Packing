@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun Package - Trusted Packaging Partner</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-blue": "#003366",
+              "secondary-blue": "#0099cc",
+              "light-beige": "#f2e6d0",
+              gold: "#d4af37",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .text-shadow {
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .menu-slide {
+          transform: translateX(-100%);
+          transition: transform 0.3s ease-in-out;
+        }
+        .menu-slide.open {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header/Navbar -->
+    <section class="bg-[#00345D] min-h-[100vh]">
+      <nav class="bg-[#00345D] py-4">
+        <div
+          class="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between"
+        >
+          <a href="/index.html#home" class="flex items-center">
+            <img src="Assets/Logo.png" alt="Sun Package Logo" class="h-10" />
+          </a>
+          <!-- Desktop Menu -->
+          <ul class="hidden lg:flex space-x-8 text-white font-medium text-lg">
+            <li>
+              <a href="/index.html#about" class="hover:text-secondary-blue"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="/index.html#products" class="hover:text-secondary-blue"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html#infrastructure"
+                class="hover:text-secondary-blue"
+                >Infrastructure</a
+              >
+            </li>
+            <li>
+              <a href="/index.html#contact" class="hover:text-secondary-blue"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="py-2 hidden lg:block text-[#fff] text-lg font-semibold">
+            TEL: 1-800-555-1234
+          </div>
+          <!-- Mobile menu button -->
+          <button
+            id="menu-toggle"
+            class="lg:hidden text-white focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu slide-in from the left -->
+        <div
+          id="mobile-menu"
+          class="menu-slide fixed top-0 left-0 z-50 bg-[#00345D] w-3/4 h-full flex flex-col justify-between p-8"
+        >
+          <!-- Close Button -->
+          <button
+            id="close-menu"
+            class="text-white text-3xl absolute top-4 right-4"
+          >
+            &times;
+          </button>
+
+          <!-- Menu Items -->
+          <ul
+            class="flex flex-col items-start space-y-6 text-white text-lg font-semibold"
+          >
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Infrastructure</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <!-- TEL Number visible only in mobile menu -->
+          <div class="text-white text-lg font-semibold mt-4">
+            TEL: 1-800-555-1234
+          </div>
+        </div>
+
+        <!-- Overlay when menu is open -->
+        <div
+          id="overlay"
+          class="fixed inset-0 bg-black opacity-50 z-40 hidden"
+        ></div>
+      </nav>
+      <div class="lg:py-10">
+        <div
+          class="container mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center lg:items-center justify-between gap-10 sm:gap-12 lg:gap-16 py-8"
+        >
+          <!-- Left: Text Content -->
+          <div
+            class="w-full border border-dashed border-[#6BB8E9] p-4 sm:p-6 rounded-md bg-[#00345D]"
+          >
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#008AD2] mb-6"
+            >
+              Safety Policy
+            </h2>
+            <ul
+              class="list-disc pl-5 sm:pl-6 text-white space-y-6 text-base sm:text-lg"
+            >
+              <li>
+                This company is committed to a strong safety program that
+                protects its staff, its property and the public from accidents.
+              </li>
+              <li>
+                Employees at every level, including management, are responsible
+                and accountable for the company’s overall safety initiatives.
+                Complete and active participation by everyone, every day, in
+                every job is necessary for the safety among all workers on the
+                job site.
+              </li>
+              <li>
+                Management supports participation in the program by all
+                employees and provides proper equipment, training and
+                procedures. Employees are responsible for following all
+                procedures, working safely, and, wherever possible, improving
+                safety measures.
+              </li>
+              <li>
+                An injury and accident-free workplace is our goal. Through
+                continuous safety and loss control, we can accomplish this.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Image -->
+          <div class="w-full lg:w-1/2 flex justify-center">
+            <img
+              src="Assets/img-8.png"
+              alt="Quality Policy Boxes"
+              class="rounded-lg shadow-md w-full lg:max-w-sm mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="bg-[#DECDA8] text-black px-4 py-10">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <!-- Contact Info -->
+          <div>
+            <img
+              src="Assets/logo-2.png"
+              alt="Sun Package Logo"
+              class="w-40 mb-8 lg:w-60 lg:mb-10"
+            />
+            <div class="flex items-center mt-2">
+              <span class="material-icons">home</span>
+              <p class="ml-2">4XX7 Middle Street. Thanjavur, India 39495.</p>
+            </div>
+            <div class="flex items-center mt-2">
+              <span class="material-icons">call</span>
+              <p class="ml-2">(406) 5XX-012X</p>
+            </div>
+            <div class="flex items-center mt-2">
+              <span class="material-icons">email</span>
+              <p class="ml-2">exampleX@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h2 class="text-lg font-semibold mb-4">Quick Links</h2>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="/index.html#home"
+                  class="hover:text-[#00345D] transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/index.html#about"
+                  class="hover:text-[#00345D] transition duration-300"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/index.html#products"
+                  class="hover:text-[#00345D] transition duration-300"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/index.html#contact"
+                  class="hover:text-[#00345D] transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Useful Links -->
+          <div>
+            <h2 class="text-lg font-semibold mb-4">Useful Links</h2>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="/Quality_Policy.html"
+                  target="_blank"
+                  class="hover:text-[#00345D] transition duration-300"
+                >
+                  Quality policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/Safety_policy.html"
+                  target="_blank"
+                  class="hover:text-[#00345D] transition duration-300"
+                >
+                  Safety Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/Technology_up-gradation.html"
+                  target="_blank"
+                  class="hover:text-[#00345D] transition duration-300"
+                >
+                  Technology upgradation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/Performance.html"
+                  target="_blank"
+                  class="hover:text-[#00345D] transition duration-300"
+                >
+                  High performance
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/Advance_Technology1.html"
+                  target="_blank"
+                  class="hover:text-[#00345D] transition duration-300"
+                >
+                  Advance Technology
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h2 class="text-lg font-semibold mb-4">Newsletter Subscribe</h2>
+            <p>Subscribe for latest updates</p>
+            <div class="flex mt-3">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full p-2 rounded text-black mr-2"
+              />
+              <button
+                class="bg-[#fff] px-4 rounded text-black hover:bg-[#00345D] hover:text-white transition"
+              >
+                →
+              </button>
+            </div>
+            <div class="flex mt-4 space-x-4">
+              <a href="#" class="hover:text-[#00345D] transition duration-300"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-[#00345D] transition duration-300"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="hover:text-[#00345D] transition duration-300"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+              <a href="#" class="hover:text-[#00345D] transition duration-300"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10 text-sm">Copyright © 2024</div>
+    </footer>
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const overlay = document.getElementById("overlay");
+      const closeMenu = document.getElementById("close-menu");
+
+      // Toggle the mobile menu
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+        overlay.classList.toggle("hidden");
+      });
+
+      // Close the mobile menu when clicking the close button or overlay
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        overlay.classList.add("hidden");
+      });
+
+      overlay.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        overlay.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
