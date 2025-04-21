@@ -129,9 +129,9 @@
         </div>
 
         <!-- Mobile menu slide-in from the left -->
-        <div
+         <div
           id="mobile-menu"
-          class="menu-slide fixed top-0 left-0 z-50 bg-[#00345D] w-3/4 h-full flex flex-col justify-between p-8"
+          class="menu-slide fixed top-0 left-0 z-50 bg-[#008AD2] w-3/4 h-full flex flex-col justify-between p-8"
         >
           <!-- Close Button -->
           <button
@@ -145,14 +145,14 @@
           <ul
             class="flex flex-col items-start space-y-6 text-white text-lg font-semibold"
           >
-            <li><a href="#about" class="hover:text-secondary-blue transition duration-300 mobile-link">About</a></li>
-            <li><a href="#products" class="hover:text-secondary-blue transition duration-300 mobile-link">Products</a></li>
-            <li><a href="#infrastructure" class="hover:text-secondary-blue transition duration-300 mobile-link">Infrastructure</a></li>
-            <li><a href="#contact" class="hover:text-secondary-blue transition duration-300 mobile-link">Contact</a></li>
+            <li><a href="#about" class=" transition duration-300 mobile-link">About</a></li>
+            <li><a href="#products" class=" transition duration-300 mobile-link">Products</a></li>
+            <li><a href="#infrastructure" class="transition duration-300 mobile-link">Infrastructure</a></li>
+            <li><a href="#contact" class="hover:transition duration-300 mobile-link">Contact</a></li>
           </ul>
 
           <!-- TEL Number visible only in mobile menu -->
-          <div class="text-white text-lg font-semibold mt-4">
+          <div class="text-white text-lg font-semibold">
             TEL: 1-800-555-1234
           </div>
         </div>
@@ -658,32 +658,33 @@
       const mobileMenu = document.getElementById("mobile-menu");
       const overlay = document.getElementById("overlay");
       const closeMenu = document.getElementById("close-menu");
-      const mobileLinks = document.querySelectorAll(".mobile-link");
-
+      const menuItems = document.querySelectorAll("#mobile-menu ul li a"); // All menu links in mobile
+    
       // Toggle the mobile menu
       toggleBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("open");
         overlay.classList.toggle("hidden");
       });
-
+    
       // Close the mobile menu when clicking the close button or overlay
       closeMenu.addEventListener("click", () => {
         mobileMenu.classList.remove("open");
         overlay.classList.add("hidden");
       });
-
+    
       overlay.addEventListener("click", () => {
         mobileMenu.classList.remove("open");
         overlay.classList.add("hidden");
       });
-
-      // Close mobile menu when a link is clicked
-      mobileLinks.forEach(link => {
-        link.addEventListener("click", () => {
+    
+      // Close the mobile menu when a menu item is clicked
+      menuItems.forEach(item => {
+        item.addEventListener("click", () => {
           mobileMenu.classList.remove("open");
           overlay.classList.add("hidden");
         });
       });
     </script>
+    
   </body>
 </html>
