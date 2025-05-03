@@ -132,13 +132,22 @@
 #backToTop.show {
   display: block;
   opacity: 1;
-}   
+}  
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+} 
  </style>
     
   </head>
-  <body class="font-sans text-gray-800 ">
+  <body class="font-sans text-gray-800 font-sole">
     <!-- Header/Navbar -->
-    <section id="home" class="bg-[#00345D] min-h-[100vh] overflow-x-hidden">
+    <section id="home" class="bg-[#00345D] min-h-[100vh] overflow-x-hidden hide-scrollbar">
       <nav class="bg-[#00345D] py-4 ">
         <div class="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between" data-aos="fade-down">
           <a href="#home" class="flex items-center" data-aos="fade-right" data-aos-delay="100">
