@@ -1,9 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sun Package - Trusted Packaging Partner</title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Sun Package - Trusted Packaging Partner. We provide high-quality packaging solutions for businesses across various industries. Since 1988, we’ve been crafting excellence in packaging services."
+    />
+    <meta
+      name="keywords"
+      content="packaging solutions, trusted packaging partner, high-quality packaging, packaging services, Sun Package, packaging for businesses, custom packaging"
+    />
+    <meta name="author" content="Sun Package" />
+    <title>Sun Package</title>
+    <link rel="icon" href="Assets/logo-2.png" type="image/png" />
+    <!-- Open Graph Meta Tags (For Social Media sharing) -->
+    <meta
+      property="og:title"
+      content="Sun Package - Trusted Packaging Partner"
+    />
+    <meta
+      property="og:description"
+      content="We provide high-quality packaging solutions, trusted by businesses worldwide. Crafting excellence since 1988."
+    />
+    <meta property="og:image" content="/Assets/Logo.png" />
+    <meta property="og:url" content="https://www.sunpackage.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta
+      name="twitter:title"
+      content="Sun Package - Trusted Packaging Partner"
+    />
+    <meta
+      name="twitter:description"
+      content="We provide high-quality packaging solutions, trusted by businesses worldwide. Crafting excellence since 1988."
+    />
+    <meta name="twitter:image" content="Assets/Logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -52,7 +88,7 @@
           class="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between"
         >
           <a href="#" class="flex items-center">
-            <img src="Assets/logo-2.png" alt="Sun Package Logo" class="h-10" />
+            <img src="Assets/logo-2.png" alt="Sun Package Logo" class="lg:h-16 h-14" />
           </a>
           <!-- Desktop Menu -->
           <ul
@@ -273,7 +309,9 @@
           </div>
         </div>
       </div>
-      <div class="text-center mt-10 text-sm">Copyright © 2024</div>
+      <div class="text-center mt-10 text-sm">
+        Copyright © <span id="year"></span>
+        </div>
     </footer>
 
     <script>
@@ -298,6 +336,7 @@
         mobileMenu.classList.remove("open");
         overlay.classList.add("hidden");
       });
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
