@@ -782,7 +782,7 @@
     </section>
   
       <!-- Contact Section -->
-      <section id="contact" class="py-16 md:py-20 px-4 bg-white">
+      <section id="contact" class="py-16 md:py-20 px-4 bg-white ">
         <div class="container mx-auto px-4">
           <!-- Heading -->
           <div class="mb-12" data-aos="fade-up" data-aos-duration="1000">
@@ -807,7 +807,7 @@
         >
           <!-- Name -->
           <div class="flex flex-col">
-            <label class="text-sm font-medium mb-1 text-[#01325D]">Name</label>
+            <label class="text-sm lg:text-lg font-medium mb-1 text-[#01325D]">Name</label>
             <input
               type="text"
               placeholder="Enter your name"
@@ -818,7 +818,7 @@
         
           <!-- Email -->
           <div class="flex flex-col">
-            <label class="text-sm font-medium mb-1 text-[#01325D]">Email</label>
+            <label class="text-sm lg:text-lg font-medium mb-1 text-[#01325D]">Email</label>
             <input
               type="email"
               placeholder="Enter your email"
@@ -829,24 +829,18 @@
         
           <!-- Phone -->
           <div class="flex flex-col">
-            <label class="text-sm font-medium mb-1 text-[#01325D]">Phone</label>
+            <label class="text-sm lg:text-lg font-medium mb-1 text-[#01325D]">Phone</label>
             <input
               type="tel"
               placeholder="Enter your phone number"
               required
               class="px-4 py-2 border border-[#01325D] rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#008AD2]"
             />
-            <button
-              type="submit"
-              class="px-6 py-2 text-md bg-[#01325D] text-white rounded-full transition mt-10 w-40"
-            >
-              Send →
-            </button>
           </div>
         
           <!-- Message -->
           <div class="flex flex-col">
-            <label class="text-sm font-medium mb-1 text-[#01325D]">Message</label>
+            <label class="text-sm lg:text-lg font-medium mb-1 text-[#01325D]">Message</label>
             <textarea
               placeholder="Tell us about your project"
               rows="3"
@@ -854,7 +848,15 @@
               class="px-4 py-2 border border-[#01325D] rounded-md text-sm resize-none focus:outline-none focus:ring-2 focus:ring-[#008AD2]"
             ></textarea>
           </div>
-        
+
+          <div class="md:col-span-2 flex justify-center md:justify-start">
+            <button
+              type="submit"
+              class="px-6 py-2 text-md bg-[#01325D] text-white rounded-full transition mt-2 lg:-mt-8 w-full md:w-40"
+            >
+              Send →
+            </button>
+          </div>
         </form>
         <!-- MODAL -->
 <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
@@ -876,8 +878,8 @@
       <footer class="bg-gray-800 text-white">
         <div class="container mx-auto px-4 py-10">
           <!-- Logo Section -->
-          <div class="flex justify-center md:justify-start mb-8">
-            <img src="Assets/Logo.png" alt="Sun Package Logo" class="w-40 lg:w-52">
+          <div class="flex justify-start mb-8">
+            <img src="Assets/Logo.png" alt="Sun Package Logo" class="w-36 lg:w-52">
           </div>
       
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
