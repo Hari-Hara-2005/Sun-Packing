@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth scroll-pt-24">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="Sun Package - Trusted Packaging Partner. We provide high-quality packaging solutions for businesses across various industries. Since 1988, we’ve been crafting excellence in packaging services." />
+    <meta name="description" content="Sun Package - Trusted Packaging Partner. We provide high-quality packaging solutions for businesses across various industries. Since 1998, we’ve been crafting excellence in packaging services." />
     <meta name="keywords" content="packaging solutions, trusted packaging partner, high-quality packaging, packaging services, Sun Package, packaging for businesses, custom packaging" />
     <meta name="author" content="Sun Package" />
     <title>Sun Package</title>
      <link rel="icon" href="Assets/logo-2.png" type="image/png" />
     <!-- Open Graph Meta Tags (For Social Media sharing) -->
     <meta property="og:title" content="Sun Package - Trusted Packaging Partner" />
-    <meta property="og:description" content="We provide high-quality packaging solutions, trusted by businesses worldwide. Crafting excellence since 1988." />
+    <meta property="og:description" content="We provide high-quality packaging solutions, trusted by businesses worldwide. Crafting excellence since 1998." />
     <meta property="og:image" content="/Assets/Logo.png" />
-    <meta property="og:url" content="https://www.sunpackage.com" />
+    <meta property="og:url" content=  "http://www.Sunpackage.net" />
     <meta property="og:type" content="website" />
-
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:title" content="Sun Package - Trusted Packaging Partner" />
-    <meta name="twitter:description" content="We provide high-quality packaging solutions, trusted by businesses worldwide. Crafting excellence since 1988." />
+    <meta name="twitter:description" content="We provide high-quality packaging solutions, trusted by businesses worldwide. Crafting excellence since 1998." />
     <meta name="twitter:image" content="Assets/Logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -148,13 +147,13 @@ tailwind.config = {
  </style>
     
   </head>
-  <body class="font-sans text-gray-800 font-sole">
+  <body class="font-sans text-gray-800 font-sole ">
     <!-- Header/Navbar -->
     <section id="home" class="bg-[#00345D] min-h-[100vh] overflow-x-hidden hide-scrollbar">
-      <nav class="bg-[#00345D] py-4 slap:px-5">
-        <div class="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between" data-aos="fade-down">
+    <nav id="navbar" class="bg-[#00345D] py-4 slap:px-5 fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4  flex flex-wrap items-center justify-between" data-aos="fade-down">
           <a href="#home" class="flex items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="Assets/Logo.png" alt="Sun Package Logo" class="slap:h-12 lg:h-16 h-14" />
+            <img src="Assets/Logo.png" alt="Sun Package Logo" class=" slap:h-12 lg:h-16 h-12" />
           </a>
           <!-- Desktop Menu -->
           <ul class="hidden lg:flex space-x-8 text-white font-medium text-lg" data-aos="fade-left" data-aos-delay="200">
@@ -229,8 +228,8 @@ tailwind.config = {
       </nav>
 
     <!-- Hero Section -->
-    <section class="bg-[#00345D] h-[100dvh] lg:h-[80vh] flex items-center ">
-      <div class="w-full mx-auto relative">
+    <section class="bg-[#00345D] h-[100dvh] lg:h-[90vh] flex items-center ">
+      <div class="w-full mx-auto relative lg:px-10">
         <!-- Carousel Wrapper -->
         <div id="carousel" class="relative overflow-hidden h-[60vh]">
     
@@ -313,13 +312,13 @@ tailwind.config = {
           </div>
     
           <!-- Navigation Buttons -->
-          <button id="prev-btn" class="absolute left-8 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" aria-label="Previous slide">
+          <button id="prev-btn" class="absolute left-8 lg:left-5 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" aria-label="Previous slide">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
               </svg>
           </button>
     
-          <button id="next-btn" class="absolute right-8 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" aria-label="Next slide">
+          <button id="next-btn" class="absolute right-8 lg:right-5 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" aria-label="Next slide">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
@@ -417,7 +416,7 @@ tailwind.config = {
 </script>
 
        <!-- About Section -->
-       <section id="about" class="bg-[#008AD2] min-h-[85vh] text-white flex items-center py-16 slap:py-10 slap:px-10 md:px-2 lg:py-0 ">
+      <section id="about" class="bg-[#008AD2] min-h-[85vh] text-white flex items-center py-16 slap:py-10 slap:px-10 md:px-2 lg:py-0 ">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap slap:flex-wrap  lg:flex-nowrap  lg:gap-x-[6rem] -mx-4">
             <!-- Left Column -->
@@ -495,7 +494,6 @@ tailwind.config = {
           </div>
         </div>
       </section>
-      
   
       <!-- Products Section -->
       <section id="products" class="bg-white min-h-[90vh] items-center py-16 md:py-20 slap:px-10 slap:py-10 flex md:px-5">
@@ -684,7 +682,7 @@ tailwind.config = {
                 </a>
       
                 <a 
-                  href="/Performance.html" 
+                  href="/Advance_Technology1.html" 
                   target="_blank" 
                   class="group hover:text-[#00345D] transition duration-300"
                   data-aos="zoom-in"
@@ -891,7 +889,7 @@ tailwind.config = {
             <!-- Quick Links Box -->
             <div class="bg-gray-700 rounded-lg p-6 shadow-lg">
               <h3 class="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">Quick Links</h3>
-              <ul class="space-y-2">
+              <ul class="space-y-2 lg:space-y-4">
                 <li><a href="#home" class="hover:text-blue-300 transition duration-300">Home</a></li>
                 <li><a href="#about" class="hover:text-blue-300 transition duration-300">About</a></li>
                 <li><a href="#products" class="hover:text-blue-300 transition duration-300">Products</a></li>
@@ -902,11 +900,10 @@ tailwind.config = {
             <!-- Useful Links Box -->
             <div class="bg-gray-700 rounded-lg p-6 shadow-lg">
               <h3 class="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">Useful Links</h3>
-              <ul class="space-y-2">
+              <ul class="space-y-2 lg:space-y-4">
                 <li><a href="/Quality_Policy.html" target="_blank" class="hover:text-blue-300 transition duration-300">Quality policy</a></li>
                 <li><a href="/Safety_policy.html" target="_blank" class="hover:text-blue-300 transition duration-300">Safety Policy</a></li>
                 <li><a href="/Technology_up-gradation.html" target="_blank" class="hover:text-blue-300 transition duration-300">Technology upgradation</a></li>
-                <li><a href="/Performance.html" target="_blank" class="hover:text-blue-300 transition duration-300">High performance</a></li>
                 <li><a href="/Advance_Technology1.html" target="_blank" class="hover:text-blue-300 transition duration-300">Advance Technology</a></li>
               </ul>
             </div>
@@ -1026,6 +1023,14 @@ document.getElementById("year").textContent = new Date().getFullYear();
       function closeModal() {
         document.getElementById('successModal').classList.add('hidden');
       }
+       window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 10) {
+      navbar.classList.add("backdrop-blur-md", "bg-[#00345d]/70", "shadow-lg");
+    } else {
+      navbar.classList.remove("backdrop-blur-md", "bg-[#00345d]/70", "shadow-lg");
+    }
+  });
     </script>
     
   </body>

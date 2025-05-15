@@ -68,12 +68,12 @@
   <body class="font-sole text-gray-800">
     <!-- Header/Navbar -->
     <section class="bg-[#DECDA8] min-h-[100vh]">
-      <nav class="bg-[#DECDA8] py-4">
+      <nav class="bg-[#DECDA8]  py-4 slap:px-5 fixed w-full top-0 z-50 transition-all duration-300">
         <div
-          class="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between"
+          class="container mx-auto px-4  flex flex-wrap items-center justify-between"
         >
           <a href="/index.html#home" class="flex items-center">
-            <img src="Assets/logo-2.png" alt="Sun Package Logo" class="lg:h-16 h-14" />
+            <img src="Assets/logo-2.png" alt="Sun Package Logo" class="lg:h-16 h-12" />
           </a>
           <!-- Desktop Menu -->
           <ul
@@ -196,7 +196,7 @@
           class="fixed inset-0 bg-black opacity-50 z-40 hidden"
         ></div>
       </nav>
-      <div class="py-10">
+     <div class="py-5 lg:py-36">
         <div
           class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-8"
         >
@@ -245,7 +245,7 @@
           <!-- Quick Links Box -->
           <div class="bg-gray-700 rounded-lg p-6 shadow-lg">
             <h3 class="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">Quick Links</h3>
-            <ul class="space-y-2">
+            <ul class="space-y-2 lg:space-y-4">
               <li><a    href="/index.html#home" class="hover:text-blue-300 transition duration-300">Home</a></li>
               <li><a   href="/index.html#about" class="hover:text-blue-300 transition duration-300">About</a></li>
               <li><a href="/index.html#products" class="hover:text-blue-300 transition duration-300">Products</a></li>
@@ -256,11 +256,10 @@
           <!-- Useful Links Box -->
           <div class="bg-gray-700 rounded-lg p-6 shadow-lg">
             <h3 class="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">Useful Links</h3>
-            <ul class="space-y-2">
+            <ul class="space-y-2 lg:space-y-4">
               <li><a href="/Quality_Policy.html" target="_blank" class="hover:text-blue-300 transition duration-300">Quality policy</a></li>
               <li><a href="/Safety_policy.html" target="_blank" class="hover:text-blue-300 transition duration-300">Safety Policy</a></li>
               <li><a href="/Technology_up-gradation.html" target="_blank" class="hover:text-blue-300 transition duration-300">Technology upgradation</a></li>
-              <li><a href="/Performance.html" target="_blank" class="hover:text-blue-300 transition duration-300">High performance</a></li>
               <li><a href="/Advance_Technology1.html" target="_blank" class="hover:text-blue-300 transition duration-300">Advance Technology</a></li>
             </ul>
           </div>
@@ -319,6 +318,15 @@
         overlay.classList.add("hidden");
       });
       document.getElementById("year").textContent = new Date().getFullYear();
+
+       window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 10) {
+      navbar.classList.add("backdrop-blur-md", "bg-[#00345d]/70", "shadow-lg");
+    } else {
+      navbar.classList.remove("backdrop-blur-md", "bg-[#00345d]/70", "shadow-lg");
+    }
+  });
     </script>
   </body>
 </html>
