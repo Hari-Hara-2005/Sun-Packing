@@ -46,6 +46,9 @@
             fontFamily: {
               sole: ['"Sole Sans Extended"', 'sans-serif'],
             },
+            screens: {
+        slap: { min: '1024px', max: '1438px' },
+      },
           },
         },
       };
@@ -195,49 +198,61 @@
           class="fixed inset-0 bg-black opacity-50 z-40 hidden"
         ></div>
       </nav>
-    <section class="bg-[#DECDA8] min-h-[100vh] lg:px-14">
-     <div class="py-5 lg:py-36">
-        <div
-          class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-8"
-        >
-          <!-- Left Image (shown first on mobile) -->
-          <div class="flex-shrink-0 w-full lg:w-1/3">
-            <img
-              src="Assets/img-10.png"
-              alt="High Performance Machine"
-              class="rounded-lg shadow-md w-full h-96 lg:h-[600px] "
-            />
-          </div>
+   <section class="bg-[#DECDA8] min-h-[100vh]  flex items-end justify-center px-4 lg:px-14">
+  <div class="py-10 lg:py-36">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-16 slap:gap-10 lg:gap-28">
+      
+      <!-- Left Image -->
+      <div class="w-full lg:w-1/3">
+        <img
+          src="Assets/img-10.png"
+          alt="High Performance Machine"
+          class="rounded-lg shadow-md w-full h-72 sm:h-96 lg:h-[600px] object-cover"
+        />
+      </div>
 
-          <!-- Right Content (shown second on mobile, first on large screens) -->
-          <div class="w-full lg:w-1/2">
-            <h2 class="text-3xl font-bold text-[#01325D] mb-1">
-              Advance Technology
-            </h2>
-            <h3 class="text-lg text-gray-700 font-medium mb-6">
-              Machinery & Equipment
-            </h3>
-            <ul
-              class="list-disc pl-5 text-[#01325D] space-y-8 text-lg font-semibold"
-            >
-              <li>32” x 42”, 40” x 54”, 52” x 72” Punching machine</li>
-              <li>85” Rotary & slotting machine</li>
-              <li>75”, 89”, 110” Pasting machine</li>
-              <li>75” Creasing machine</li>
-              <li>40” Stitching machine (4 nos)</li>
-              <li>36”, 48” Lamination machine</li>
-              <li>52” Board cutter machine</li>
-              <li>Paste mixing machine</li>
-              <li>Linux machines testing equipment machine full set</li>
-            </ul>
-          </div>
+      <!-- Right Content -->
+      <div class="w-full lg:w-2/3">
+        <h2 class="text-2xl sm:text-3xl font-bold text-[#008AD2] mb-2">
+          Advance Technology
+        </h2>
+        <h3 class="text-md sm:text-lg text-[#008AD2] font-medium mb-6">
+          Machinery & Equipment
+        </h3>
+
+        <!-- Two-column List for large screens, stacked on mobile -->
+        <div class="grid grid-cols-1 md:grid-cols-2  gap-y-8 text-[#01325D] text-sm sm:text-base slap:text-sm lg:text-lg font-semibold">
+          <ul class="list-disc pl-5 space-y-7">
+            <li>5 Ply automatic plant with three profile ( A, B & C) with 10 ton boiler</li>
+            <li>66" High speed corrugation machine double profile (B / C)</li>
+            <li>52" High speed corrugation machine double profile le  ( E / C ) - 2  </li>
+            <li>Two color printer slitter with lead edge and stacker</li>
+            <li>Auto ute laminator</li>
+            <li>Auto stitching machine</li>
+            <li>Semi auto ap pasting machine</li>
+            <li>52" & 72" Automatic cutting machine</li>
+          </ul>
+          <ul class="list-disc pl-5 slap:pl-10 lg:pl-24 space-y-7 mt-2 md:mt-0">
+            <li>32” x 42”, 40” x 54”, 52” x 72” Punching machine</li>
+            <li>85” Rotary & slotting machine</li>
+            <li>75”, 89”, 110” Pasting machine</li>
+            <li>75” Creasing machine</li>
+            <li>40” Stitching machine (4 nos)</li>
+            <li>36”, 48” Lamination machine</li>
+            <li>52” Board cutter machine</li>
+            <li>Paste mixing machine</li>
+            <li>Linux machines testing equipment machine full set</li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
     <footer class="bg-gray-800 text-white slap:px-8 lg:px-10">
       <div class="container mx-auto px-4 py-10">
         <!-- Logo Section -->
-        <div class="flex justify-center md:justify-start mb-8">
+        <div class="flex justify-start mb-8">
           <img src="Assets/Logo.png" alt="Sun Package Logo" class="w-40 lg:w-52">
         </div>
     
