@@ -1011,25 +1011,32 @@ document.getElementById("year").textContent = new Date().getFullYear();
         });
       }
     </script>
-    <script>
-      function handleFormSubmit(event) {
-        event.preventDefault();
-        document.getElementById('successModal').classList.remove('hidden');
-        event.target.reset();
-      }
-    
-      function closeModal() {
-        document.getElementById('successModal').classList.add('hidden');
-      }
-       window.addEventListener("scroll", () => {
-    const navbar = document.getElementById("navbar");
-    if (window.scrollY > 10) {
-      navbar.classList.add("backdrop-blur-md", "bg-[#00345d]/70", "shadow-lg");
-    } else {
-      navbar.classList.remove("backdrop-blur-md", "bg-[#00345d]/70", "shadow-lg");
-    }
+   <script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const closeMenu = document.getElementById("close-menu");
+  const overlay = document.getElementById("overlay");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.add("open");
+    overlay.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
   });
-    </script>
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+    overlay.classList.add("hidden");
+    document.body.classList.remove("overflow-hidden");
+  });
+
+  overlay.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+    overlay.classList.add("hidden");
+    document.body.classList.remove("overflow-hidden");
+  });
+</script>
+
     
   </body>
 </html>
