@@ -228,11 +228,10 @@ tailwind.config = {
       </nav>
 
     <!-- Hero Section -->
-    <section class="bg-[#00345D] h-[100dvh] lg:h-[95vh] flex items-center">
-      <div class="w-full mx-auto relative lg:px-20 lg:pt-16">
+    <section class="bg-[#00345D] h-[100dvh] slap:h-[100vh] lg:h-[95vh] flex items-center">
+      <div class="w-full mx-auto relative lg:px-20 lg:pt-16 slap:pt-0">
         <!-- Carousel Wrapper -->
-        <div id="carousel" class="relative overflow-hidden h-[60vh]">
-    
+        <div id="carousel" class="relative overflow-hidden h-[60vh] slap:h-[100vh]">
           <!-- Slide 1 -->
           <div id="slide-1" class="absolute inset-0 transition-opacity duration-500 ease-in-out flex items-center justify-center">
             <div class="container mx-auto px-4 py-10">
@@ -252,7 +251,7 @@ tailwind.config = {
                   <img
                     src="Assets/box.png"
                     alt="Packaging Boxes"
-                    class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg scale-125 slap:scale-125 lg:scale-150 w-full h-auto"
+                    class="max-w-xs sm:max-w-sm md:max-w-md slap:max-w-md lg:max-w-lg scale-125 slap:scale-125 lg:scale-150 w-full h-auto"
                   />
                 </div>
               </div>
@@ -278,7 +277,7 @@ tailwind.config = {
                   <img
                     src="Assets/img-12.png"
                     alt="Packaging Boxes"
-                    class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg scale-100 w-full h-auto"
+                    class="max-w-xs sm:max-w-sm md:max-w-md slap:max-w-md lg:max-w-lg scale-100 w-full h-auto"
                   />
                 </div>
               </div>
@@ -300,11 +299,11 @@ tailwind.config = {
                 </div>
     
                 <!-- Right Image -->
-                <div class="w-full slap:w-full lg:w-1/2 flex justify-center overflow-hidden" data-aos="fade-left" data-aos-duration="1000">
+                <div class="w-full slap:w-full  lg:w-1/2  flex justify-center overflow-hidden" data-aos="fade-left" data-aos-duration="1000">
                   <img
                     src="Assets/img-13.png"
                     alt="Packaging Boxes"
-                    class="max-w-xs sm:max-w-sm md:max-w-md slap:w-96 lg:max-w-lg scale-100 w-full h-auto"
+                    class="max-w-xs sm:max-w-sm md:max-w-md slap:w-[23rem] lg:max-w-lg scale-100 w-full h-auto"
                   />
                 </div>
               </div>
@@ -324,7 +323,7 @@ tailwind.config = {
               </svg>
           </button>
         <!-- Indicators -->
-        <div class="flex justify-center mt-10">
+        <div class="flex justify-center mt-10 slap:-mt-14">
           <button class="w-3 h-3 rounded-full bg-blue-600 mx-1 focus:outline-none" aria-label="Go to slide 1" data-slide="1"></button>
           <button class="w-3 h-3 rounded-full bg-gray-300 mx-1 focus:outline-none" aria-label="Go to slide 2" data-slide="2"></button>
           <button class="w-3 h-3 rounded-full bg-gray-300 mx-1 focus:outline-none" aria-label="Go to slide 3" data-slide="3"></button>
@@ -783,7 +782,7 @@ tailwind.config = {
     </section>
   
       <!-- Contact Section -->
-      <section id="contact" class="py-16 md:py-20 px-4 bg-white slap:px-14 lg:px-24">
+      <section id="contact" class="py-16 md:py-20 px-4 bg-white md:px-10 slap:px-14 lg:px-24">
         <div class="container mx-auto">
           <!-- Heading -->
           <div class="mb-12" data-aos="fade-up" data-aos-duration="1000">
